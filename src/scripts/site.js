@@ -73,21 +73,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Throttled scroll handler
+  // Throttled scroll handler with performance optimization
   let ticking = false;
+  let lastScrollY = 0;
   
   function handleScroll() {
+    const currentScrollY = window.scrollY;
+    
+    // Only update if scroll changed significantly
+    if (Math.abs(currentScrollY - lastScrollY) < 5) return;
+    
     if (!ticking) {
       requestAnimationFrame(() => {
         updateActiveNav();
         updateNavbar();
+        lastScrollY = currentScrollY;
         ticking = false;
       });
       ticking = true;
     }
   }
 
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll, { passive: true });
 
   // Smooth scroll for navigation links
   navLinksAll.forEach(link => {
@@ -164,10 +171,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Add scroll animations
+  // Add scroll animations with reduced observer overhead
   const observerOptions = {
     root: null,
-    rootMargin: '0px 0px -100px 0px',
+    rootMargin: '0px 0px -50px 0px',
     threshold: 0.1
   };
 
@@ -176,17 +183,19 @@ document.addEventListener('DOMContentLoaded', function() {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
         entry.target.style.transform = 'translateY(0)';
+        // Stop observing once animated to improve performance
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Observe elements for animation
-  const animatedElements = document.querySelectorAll('.experience-card, .project-card, .contact-card');
+  // Observe elements for animation - reduced set
+  const animatedElements = document.querySelectorAll('.experience-card, .project-card');
   
   animatedElements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
     observer.observe(el);
   });
 

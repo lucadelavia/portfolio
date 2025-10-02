@@ -100,7 +100,6 @@ body::after {
   background-size: 1200px 250px;
   animation: stars-group-1 3s ease-in-out infinite;
 }
-}
 
 /* Galaxy animations - Reduced movement */
 @keyframes nebula-drift {

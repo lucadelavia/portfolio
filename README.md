@@ -1,21 +1,25 @@
 # Portfolio - Luca De La Via
 
-Portfolio profesional de Luca De La Via, desarrollador backend especializado en Java y Spring Boot.
+Portfolio profesional minimalista de Luca De La Via, desarrollador backend especializado en Java y Spring Boot.
 
 ## 🚀 Características
 
-- **Diseño moderno y minimalista** con modo oscuro
+- **Diseño minimalista y moderno** con tema oscuro y efectos de galaxia
+- **Fondo animado de galaxia** con estrellas que parpadean aleatoriamente
+- **Tipografía unificada** con efectos granulados en todos los títulos
 - **Totalmente responsivo** para todos los dispositivos
 - **Optimizado para rendimiento** con Astro
-- **Navegación suave** entre secciones
-- **Animaciones sutiles** con CSS
+- **Descarga directa de CV** en formato PDF
+- **Navegación centrada** sin elementos redundantes
+- **Footer ultra-minimalista** integrado con el fondo cósmico
 - **SEO optimizado** con meta tags apropiados
 - **Accesibilidad** mejorada con ARIA labels
 
 ## 🛠️ Tecnologías utilizadas
 
 - [Astro](https://astro.build/) - Framework web estático
-- CSS3 con variables CSS personalizadas
+- CSS3 con animaciones keyframe avanzadas
+- Efectos de gradiente radial para simulación de estrellas
 - JavaScript vanilla para interactividad
 - Google Fonts (Inter + Fira Code)
 
@@ -24,13 +28,15 @@ Portfolio profesional de Luca De La Via, desarrollador backend especializado en 
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── Curriculum Vitae Luca De La Via.pdf
 ├── src/
 │   ├── components/
 │   │   ├── Navigation.astro
 │   │   ├── Hero.astro
 │   │   ├── About.astro
 │   │   ├── Experience.astro
+│   │   ├── Education.astro
 │   │   ├── Projects.astro
 │   │   └── Contact.astro
 │   ├── layouts/
@@ -56,6 +62,11 @@ Portfolio profesional de Luca De La Via, desarrollador backend especializado en 
 
 ## 🎨 Personalización
 
+### Efectos Visuales
+- **Fondo de galaxia**: Sistema de 4 capas de estrellas con animaciones aleatorias
+- **Efectos granulados**: Todos los títulos tienen un efecto shimmer con `background-clip: text`
+- **Animaciones suaves**: Transiciones fluidas y parpadeo aleatorio de estrellas
+
 ### Colores
 Los colores están definidos como variables CSS en `src/styles/global.css`:
 
@@ -64,6 +75,7 @@ Los colores están definidos como variables CSS en `src/styles/global.css`:
   --bg: #0a0e1a;
   --accent: #58a6ff;
   --text-primary: #f0f6fc;
+  --violet: #8b5cf6;
   /* ... más variables */
 }
 ```
@@ -71,11 +83,12 @@ Los colores están definidos como variables CSS en `src/styles/global.css`:
 ### Contenido
 Edita los componentes en `src/components/` para actualizar el contenido:
 
-- **Hero.astro**: Sección principal con introducción
+- **Hero.astro**: Sección principal minimalista con descarga de CV
 - **About.astro**: Información personal y habilidades
-- **Experience.astro**: Experiencia laboral y educación
+- **Experience.astro**: Experiencia laboral detallada
+- **Education.astro**: Formación académica
 - **Projects.astro**: Proyectos destacados
-- **Contact.astro**: Información de contacto y formulario
+- **Contact.astro**: Formulario de contacto compacto
 
 ## 📱 Responsive Design
 

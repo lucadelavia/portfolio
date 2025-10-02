@@ -11,7 +11,7 @@ import Contact from '../components/Contact.astro';
 
 <BaseLayout
   title="Luca De La Via | Desarrollador Backend"
-  description="Portfolio profesional de Luca De La Via, desarrollador backend especializado en Java, Spring Boot y desarrollo de APIs RESTful."
+  description="Portfolio profesional de Luca De La Via, Especializado en desarrollo de APIs. Transformo ideas en soluciones backend robustas y escalables."
 >
   <Navigation />
   <main>
@@ -25,12 +25,7 @@ import Contact from '../components/Contact.astro';
 
   <footer class="footer">
     <div class="footer-content">
-      <p>&copy; <span data-year></span> Luca De La Via.</p>
-      <div class="footer-links">
-        <a href="mailto:lucadelavia@gmail.com">Email</a>
-        <a href="https://linkedin.com/in/lucadelavia" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/lucadelavia" target="_blank" rel="noopener">GitHub</a>
-      </div>
+      <p>&copy; <span data-year></span> Luca De La Via</p>
     </div>
   </footer>
 </BaseLayout>
@@ -41,66 +36,21 @@ import Contact from '../components/Contact.astro';
   }
 
   .footer {
-    background: var(--surface);
-    border-top: 1px solid var(--border);
+    background: transparent;
+    border-top: 1px solid rgba(139, 92, 246, 0.1);
     padding: 2rem;
-    margin-top: 0;
+    text-align: center;
   }
 
   .footer-content {
     max-width: var(--max-width);
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
   }
 
   .footer p {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin: 0;
-  }
-
-  .heart {
-    color: #ef4444;
-    animation: pulse 2s infinite;
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .footer-links a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-  }
-
-  .footer-links a:hover {
-    color: var(--accent);
-  }
-
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-    }
-
-    .footer-links {
-      gap: 1.5rem;
-    }
+    opacity: 0.7;
   }
 </style>

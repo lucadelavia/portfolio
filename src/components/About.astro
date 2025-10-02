@@ -53,14 +53,14 @@
           <h4 class="skill-name">Python</h4>
         </div>      <div class="skill-card">
         <div class="skill-icon">
-          <img src="https://cdn.simpleicons.org/mysql/4479a1" alt="MySQL" class="skill-img"/>
+          <img src="https://cdn.simpleicons.org/mysql/4479a1" alt="MySQL" class="skill-img" loading="lazy"/>
         </div>
         <h4 class="skill-name">MySQL</h4>
       </div>
 
       <div class="skill-card">
         <div class="skill-icon">
-          <img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL" class="skill-img"/>
+          <img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL" class="skill-img" loading="lazy"/>
         </div>
         <h4 class="skill-name">PostgreSQL</h4>
       </div>
@@ -228,10 +228,11 @@
     border-radius: 16px; 
     padding: 2rem 1.5rem; 
     text-align: center; 
-    transition: all 0.3s ease; 
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; 
     position: relative; 
     overflow: hidden;
     backdrop-filter: blur(10px);
+    will-change: transform;
   }
   
   .skill-card::before {
@@ -243,7 +244,7 @@
     bottom: 0;
     background: linear-gradient(135deg, rgba(139, 92, 246, 0.02) 0%, rgba(124, 58, 237, 0.02) 100%);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
   }
   
   .skill-card:hover::before {
@@ -251,12 +252,11 @@
   }
   
   .skill-card:hover { 
-    transform: translateY(-8px) scale(1.02); 
+    transform: translate3d(0, -4px, 0); 
     border-color: rgba(139, 92, 246, 0.4); 
     box-shadow: 
-      0 20px 40px rgba(139, 92, 246, 0.15),
-      0 10px 20px rgba(0, 0, 0, 0.3),
-      var(--glow-shadow);
+      0 12px 24px rgba(139, 92, 246, 0.1),
+      0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   .skill-icon { 
@@ -265,10 +265,11 @@
     justify-content: center;
     align-items: center;
     height: 60px;
+    will-change: transform;
   }
   
   .skill-card:hover .skill-icon {
-    transform: scale(1.1);
+    transform: scale3d(1.05, 1.05, 1);
   }
   
   .skill-name { 
@@ -290,7 +291,7 @@
     border-radius: 12px;
     padding: 1rem 2rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -298,17 +299,17 @@
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 2rem;
+    will-change: transform;
   }
   
   .toggle-button:hover {
     background: var(--surface-soft);
     border-color: var(--accent);
-    transform: translateY(-2px);
-    box-shadow: var(--glow-shadow);
+    transform: translate3d(0, -1px, 0);
   }
   
   .toggle-icon {
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
   }
   
   .additional-skills-grid {
@@ -320,11 +321,12 @@
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    will-change: max-height, opacity;
   }
   
   .additional-skills-grid.expanded {
-    max-height: 500px;
+    max-height: 400px;
     opacity: 1;
     margin-bottom: 2rem;
     overflow: visible;

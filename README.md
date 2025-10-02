@@ -105,22 +105,6 @@ El sitio está optimizado para:
 - CSS minificado en producción
 - JavaScript minimal
 
-## 🔧 Desarrollo
-
-1. Clona el repositorio
-2. Instala las dependencias: `npm install`
-3. Inicia el servidor de desarrollo: `npm run dev`
-4. Abre `http://localhost:4321` en tu navegador
-
-## 🚀 Despliegue
-
-El sitio puede desplegarse en cualquier plataforma que soporte sitios estáticos:
-
-- [Vercel](https://vercel.com/)
-- [Netlify](https://netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
-
 ## 📞 Contacto
 
 - **Email**: lucadelavia@gmail.com
@@ -128,5 +112,3 @@ El sitio puede desplegarse en cualquier plataforma que soporte sitios estáticos
 - **GitHub**: [github.com/lucadelavia](https://github.com/lucadelavia)
 
 ---
-
-Desarrollado con ❤️ por Luca De La Via

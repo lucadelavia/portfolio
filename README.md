@@ -1,6 +1,6 @@
 # Portfolio - Luca De La Via
 
-Portfolio profesional minimalista de Luca De La Via, desarrollador backend especializado en Java y Spring Boot.
+Portfolio profesional minimalista de Luca De La Via, desarrollador backend.
 
 ## 🚀 Características
 

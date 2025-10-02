@@ -1,0 +1,95 @@
+# CV - Luca Ernesto De La Via
+
+**Desarrollador Backend**  
+Buenos Aires, Argentina  
+📧 lucadelavia@gmail.com  
+📱 +54 3641-8379  
+🔗 linkedin.com/in/lucadelavia  
+🐙 github.com/lucadelavia  
+
+---
+
+## 💼 Experiencia Profesional
+
+### Desarrollador Backend | Aimpa Sistemas
+**Marzo 2022 – Octubre 2023**
+
+- Desarrollé e implementé módulos backend para sistema ERP empresarial
+- Refactoricé código legado mejorando escalabilidad y mantenibilidad
+- Diseñé y optimicé bases de datos relacionales en MySQL
+- Optimicé consultas SQL para reportes financieros y operativos
+- Administré respaldos y restauraciones de bases de datos
+- Brindé soporte técnico de segundo nivel a clientes
+
+**Tecnologías:** Java, Spring Boot, MySQL, Hibernate, Git, Scrum
+
+---
+
+## 🎓 Educación
+
+### Licenciatura en Sistemas | Universidad Nacional de Lanús
+**2021 - Actualidad**
+
+Formación integral en desarrollo de software, algoritmos, estructuras de datos, ingeniería de software y gestión de proyectos tecnológicos.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+**Backend:**
+- Java
+- Spring Boot & Spring Framework
+- Hibernate / JPA
+- APIs RESTful
+
+**Bases de Datos:**
+- MySQL
+- PostgreSQL
+- Optimización SQL
+
+**Herramientas:**
+- Git & GitHub
+- Maven & Gradle
+- IntelliJ IDEA
+- Postman
+
+**Frontend:**
+- HTML5 & CSS3
+- JavaScript ES6+
+- Bootstrap
+- Responsive Design
+
+**Metodologías:**
+- Scrum & Kanban
+- Metodologías Ágiles
+- Control de versiones
+
+---
+
+## 🗣️ Idiomas
+
+- **Español:** Nativo
+- **Inglés:** Intermedio-alto (B2)
+
+---
+
+## 🚀 Proyectos Destacados
+
+### Sistema ERP Empresarial
+Sistema completo de gestión empresarial con módulos financieros, inventarios y reportes.
+
+### API RESTful de Inventarios
+API completa para gestión de inventarios con documentación Swagger y testing automatizado.
+
+### Sistema de Gestión Académica
+Aplicación web para gestión de estudiantes y calificaciones con autenticación por roles.
+
+---
+
+## 📞 Referencias
+
+Disponibles a solicitud - Contacto de líder técnico en Aimpa Sistemas disponible.
+
+---
+
+*Descarga la versión PDF actualizada desde mi portfolio: https://lucadelavia.dev*

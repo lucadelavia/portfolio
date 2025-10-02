@@ -1,0 +1,284 @@
+---
+---
+
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">Experiencia Profesional</h2>
+    
+    <div class="timeline">
+      <!-- Experiencia Laboral -->
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-info">
+                <h3 class="experience-title">Desarrollador Backend</h3>
+                <h4 class="experience-company">Aimpa Sistemas</h4>
+                <p class="experience-period">Marzo 2022 – Octubre 2023</p>
+              </div>
+              <div class="experience-logo">
+                <div class="company-initial">A</div>
+              </div>
+            </div>
+            
+            <div class="experience-achievements">
+              <h5>Responsabilidades principales:</h5>
+              <ul>
+                <li>
+                  Desarrollé funcionalidades backend para sistema ERP, trabajando en equipo en múltiples 
+                  módulos de gestión operativa y financiera
+                </li>
+                <li>
+                  Desarrollé nuevas features integrándolas con módulos existentes del ERP, trabajando con 
+                  código legacy y asegurando compatibilidad
+                </li>
+                <li>
+                  Optimicé performance de consultas MySQL mediante refactorización de views y queries 
+                  complejas, mejorando tiempos de respuesta en reportería
+                </li>
+                <li>
+                  Desarrollé reportes financieros automatizados con queries SQL utilizando JOINs multi-tabla 
+                  y subqueries para extracción de datos relacionales
+                </li>
+              </ul>
+            </div>
+            
+            <div class="experience-technologies">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Cloud</span>
+              <span class="tech-tag">SSH</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .experience {
+    padding: 6rem 2rem;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent), rgba(96, 165, 250, 0.3));
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: -1.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 3px var(--accent);
+  }
+
+  .timeline-content {
+    margin-left: 2rem;
+  }
+
+  .experience-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(5, 7, 15, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(96, 165, 250, 0.15);
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-title {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+
+  .experience-company {
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+
+  .experience-period {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .experience-logo {
+    width: 3rem;
+    height: 3rem;
+    background: var(--accent-soft);
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .company-initial {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .experience-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-achievements h5 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  .experience-achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .experience-achievements li {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .experience-achievements li::before {
+    content: '▸';
+    color: var(--accent);
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+  }
+
+  .experience-achievements strong {
+    color: var(--text-primary);
+  }
+
+  .experience-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .tech-tag {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .experience {
+      padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .timeline {
+      padding-left: 1rem;
+    }
+
+    .timeline::before {
+      left: 0.5rem;
+    }
+
+    .timeline-marker {
+      left: -1rem;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+
+    .timeline-content {
+      margin-left: 1.5rem;
+    }
+
+    .experience-card {
+      padding: 1.5rem;
+    }
+
+    .experience-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .experience-logo {
+      align-self: flex-start;
+    }
+
+    .experience-achievements li {
+      font-size: 0.95rem;
+    }
+  }
+</style>

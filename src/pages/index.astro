@@ -1,0 +1,106 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Education from '../components/Education.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<BaseLayout
+  title="Luca De La Via | Desarrollador Backend"
+  description="Portfolio profesional de Luca De La Via, desarrollador backend especializado en Java, Spring Boot y desarrollo de APIs RESTful."
+>
+  <Navigation />
+  <main>
+    <Hero />
+    <About />
+    <Education />
+    <Experience />
+    <Projects />
+    <Contact />
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span data-year></span> Luca De La Via.</p>
+      <div class="footer-links">
+        <a href="mailto:lucadelavia@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/lucadelavia" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/lucadelavia" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  main {
+    width: 100%;
+  }
+
+  .footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    margin-top: 0;
+  }
+
+  .footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .heart {
+    color: #ef4444;
+    animation: pulse 2s infinite;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .footer-links {
+      gap: 1.5rem;
+    }
+  }
+</style>

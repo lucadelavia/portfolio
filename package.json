@@ -1,0 +1,29 @@
+{
+  "name": "luca-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio profesional de Luca De La Via - Desarrollador Backend",
+  "author": "Luca Ernesto De La Via",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^4.10.0",
+    "@astrojs/check": "^0.7.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "portfolio",
+    "desarrollador",
+    "backend",
+    "java",
+    "spring-boot",
+    "astro"
+  ]
+}

@@ -1,0 +1,49 @@
+﻿---
+import '../styles/global.css';
+import siteScript from '../scripts/site.js?url';
+
+const {
+  title = 'Luca De La Via | Desarrollador Backend',
+  description = 'Portfolio profesional de Luca De La Via, desarrollador backend especializado en Java, Spring Boot y desarrollo de APIs RESTful. Experiencia en sistemas ERP y optimización de bases de datos.'
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="desarrollador backend, Java, Spring Boot, MySQL, APIs RESTful, programador, portfolio" />
+    <meta name="author" content="Luca Ernesto De La Via" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucadelavia.dev/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lucadelavia.dev/" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+    <script type="module" src={siteScript} defer></script>
+  </body>
+</html>

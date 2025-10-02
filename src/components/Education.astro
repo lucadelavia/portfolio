@@ -1,0 +1,383 @@
+---
+
+---
+
+<section id="education" class="education">
+  <div class="container">
+    <div class="education-header">
+      <h2 class="section-title">Formación Académica</h2>
+      <p class="section-subtitle">
+        Mi trayectoria educativa y certificaciones profesionales
+      </p>
+    </div>
+
+    <div class="education-content">
+      <!-- Universidad -->
+      <div class="education-card university">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h3>Licenciatura en Sistemas</h3>
+            <p class="institution">Universidad Nacional de Lanús</p>
+            <span class="status">En curso</span>
+          </div>
+        </div>
+
+        <div class="card-stats">
+          <div class="stat-item">
+            <div class="stat-label">Materias Aprobadas</div>
+            <div class="stat-number">23</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Promedio</div>
+            <div class="stat-number">8.5</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificaciones -->
+      <div class="certifications">
+        <h3 class="certifications-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9,10.5L7.5,9L2.5,14L7.5,19L9,17.5L5.5,14M14.5,4L16,5.5L20.5,1L16,1M14.5,20L16,18.5L20.5,23L16,23M2.5,10L7.5,5L9,6.5L5.5,10M21.5,14L16.5,19L15,17.5L18.5,14L15,10.5L16.5,9"
+            ></path>
+          </svg>
+          Certificaciones y Cursos
+        </h3>
+
+        <div class="certification-list">
+          <div class="certification-item">
+            <div class="cert-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9,10.5L7.5,9L2.5,14L7.5,19L9,17.5L5.5,14M14.5,4L16,5.5L20.5,1L16,1M14.5,20L16,18.5L20.5,23L16,23M2.5,10L7.5,5L9,6.5L5.5,10M21.5,14L16.5,19L15,17.5L18.5,14L15,10.5L16.5,9"
+                ></path>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h4>Java Programming</h4>
+              <p>Oracle Academy</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .education {
+    padding: 4rem 0;
+    background: var(--background);
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .education-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  .education-content {
+    display: grid;
+    gap: 2rem;
+  }
+
+  /* Universidad Card */
+  .education-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.3);
+  }
+
+  .card-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+    flex: 1;
+  }
+
+  .icon-wrapper {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-soft);
+    border-radius: 12px;
+    color: var(--accent);
+  }
+
+  .card-info {
+    flex: 1;
+  }
+
+  .card-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .institution {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .status {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: rgba(34, 197, 94, 0.1);
+    color: rgb(34, 197, 94);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .card-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    min-width: 120px;
+    flex-shrink: 0;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--background);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  /* Certificaciones */
+  .certifications {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+
+  .certifications-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .certifications-title svg {
+    color: var(--accent);
+  }
+
+  .certification-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .certification-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .certification-item:hover {
+    transform: translateX(4px);
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1);
+  }
+
+  .cert-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-soft);
+    border-radius: 8px;
+    color: var(--accent);
+  }
+
+  .cert-info {
+    flex: 1;
+  }
+
+  .cert-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .cert-info p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .cert-year {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .education {
+      padding: 3rem 0;
+    }
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+    }
+
+    .education-card {
+      padding: 1.5rem;
+      flex-direction: column;
+    }
+
+    .card-header {
+      flex-direction: column;
+      gap: 1.25rem;
+      width: 100%;
+    }
+
+    .card-stats {
+      min-width: auto;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .stat-item {
+      flex: 1;
+    }
+
+    .card-info h3 {
+      font-size: 1.25rem;
+    }
+
+    .stat-number {
+      font-size: 1.75rem;
+    }
+
+    .certifications {
+      padding: 1.5rem;
+    }
+
+    .certifications-title {
+      font-size: 1.25rem;
+    }
+
+    .certification-item {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .cert-year {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.75rem;
+    }
+
+    .card-stats {
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-size: 1.5rem;
+    }
+  }
+</style>

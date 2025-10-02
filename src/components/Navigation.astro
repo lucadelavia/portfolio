@@ -1,0 +1,316 @@
+---
+---
+
+<nav class="navigation">
+  <div class="nav-container">
+    <a href="#home" class="nav-brand">
+      <div class="brand-avatar">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+        </svg>
+      </div>
+      <div class="brand-info">
+        <span class="brand-name">Luca De La Via</span>
+        <span class="brand-subtitle">Backend Developer</span>
+      </div>
+    </a>
+    
+    <button 
+      class="nav-toggle" 
+      data-nav-toggle 
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    
+    <ul class="nav-links" data-nav-links>
+      <li><a href="#home" class="nav-link">Inicio</a></li>
+      <li><a href="#projects" class="nav-link">Proyectos</a></li>
+      <li><a href="#about" class="nav-link">Sobre mí</a></li>
+      <li><a href="#experience" class="nav-link">Experiencia</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+
+    <a href="/cv-luca-delavia.txt" class="btn-resume" download>
+      <span>Resume</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 10l5 5 5-5"/>
+        <path d="M12 15V3"/>
+        <path d="M21 16v5H3v-5"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<style>
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(5, 7, 15, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(148, 163, 196, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-brand:hover {
+    opacity: 0.8;
+  }
+
+  .brand-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), #93c5fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg);
+    flex-shrink: 0;
+  }
+
+  .brand-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .brand-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+
+  .brand-subtitle {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    gap: 4px;
+  }
+
+  .hamburger {
+    width: 20px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--accent);
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  .btn-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.1rem;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent);
+    white-space: nowrap;
+  }
+
+  .btn-resume:hover {
+    background: #a78bfa;
+    border-color: #a78bfa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
+  }
+
+  .btn-resume svg {
+    transition: transform 0.3s ease;
+  }
+
+  .btn-resume:hover svg {
+    transform: translateY(2px);
+  }
+
+  @media (max-width: 968px) {
+    .nav-container {
+      grid-template-columns: auto 1fr auto;
+      padding: 0.75rem 1.5rem;
+      gap: 1rem;
+    }
+
+    .nav-links {
+      gap: 1.5rem;
+    }
+
+    .nav-link {
+      font-size: 0.85rem;
+    }
+
+    .btn-resume {
+      padding: 0.45rem 1rem;
+      font-size: 0.8rem;
+    }
+
+    .btn-resume span {
+      display: none;
+    }
+
+    .btn-resume svg {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-container {
+      grid-template-columns: auto auto;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .nav-toggle {
+      display: flex;
+      order: 2;
+    }
+
+    .btn-resume {
+      order: 3;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(5, 7, 15, 0.98);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(148, 163, 196, 0.1);
+      flex-direction: column;
+      padding: 1.5rem 2rem;
+      gap: 0;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      grid-column: 1 / -1;
+    }
+
+    .nav-links.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .nav-link {
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(148, 163, 196, 0.1);
+      font-size: 0.9rem;
+      justify-content: center;
+    }
+
+    .nav-link:last-child {
+      border-bottom: none;
+    }
+
+    .brand-avatar {
+      width: 36px;
+      height: 36px;
+    }
+
+    .brand-name {
+      font-size: 0.95rem;
+    }
+
+    .brand-subtitle {
+      font-size: 0.65rem;
+    }
+
+    .btn-resume {
+      padding: 0.5rem 0.75rem;
+    }
+
+    .btn-resume span {
+      display: inline;
+    }
+
+    .nav-toggle[aria-expanded="true"] .hamburger:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle[aria-expanded="true"] .hamburger:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle[aria-expanded="true"] .hamburger:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+</style>

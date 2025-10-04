@@ -2,19 +2,6 @@
 
 Portfolio profesional minimalista de Luca De La Via, desarrollador backend.
 
-## 🚀 Características
-
-- **Diseño minimalista y moderno** con tema oscuro y efectos de galaxia
-- **Fondo animado de galaxia** con estrellas que parpadean aleatoriamente
-- **Tipografía unificada** con efectos granulados en todos los títulos
-- **Totalmente responsivo** para todos los dispositivos
-- **Optimizado para rendimiento** con Astro
-- **Descarga directa de CV** en formato PDF
-- **Navegación centrada** sin elementos redundantes
-- **Footer ultra-minimalista** integrado con el fondo cósmico
-- **SEO optimizado** con meta tags apropiados
-- **Accesibilidad** mejorada con ARIA labels
-
 ## 🛠️ Tecnologías utilizadas
 
 - [Astro](https://astro.build/) - Framework web estático
@@ -50,60 +37,6 @@ Portfolio profesional minimalista de Luca De La Via, desarrollador backend.
 ├── astro.config.mjs
 └── package.json
 ```
-
-## 🚀 Comandos disponibles
-
-| Comando                | Acción                                      |
-| :--------------------- | :------------------------------------------ |
-| `npm install`          | Instala las dependencias                   |
-| `npm run dev`          | Inicia el servidor de desarrollo en `localhost:4321` |
-| `npm run build`        | Construye el sitio de producción en `./dist/` |
-| `npm run preview`      | Previsualiza la construcción localmente, antes del despliegue |
-
-## 🎨 Personalización
-
-### Efectos Visuales
-- **Fondo de galaxia**: Sistema de 4 capas de estrellas con animaciones aleatorias
-- **Efectos granulados**: Todos los títulos tienen un efecto shimmer con `background-clip: text`
-- **Animaciones suaves**: Transiciones fluidas y parpadeo aleatorio de estrellas
-
-### Colores
-Los colores están definidos como variables CSS en `src/styles/global.css`:
-
-```css
-:root {
-  --bg: #0a0e1a;
-  --accent: #58a6ff;
-  --text-primary: #f0f6fc;
-  --violet: #8b5cf6;
-  /* ... más variables */
-}
-```
-
-### Contenido
-Edita los componentes en `src/components/` para actualizar el contenido:
-
-- **Hero.astro**: Sección principal minimalista con descarga de CV
-- **About.astro**: Información personal y habilidades
-- **Experience.astro**: Experiencia laboral detallada
-- **Education.astro**: Formación académica
-- **Projects.astro**: Proyectos destacados
-- **Contact.astro**: Formulario de contacto compacto
-
-## 📱 Responsive Design
-
-El sitio está optimizado para:
-- 📱 Móviles (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktop (1024px+)
-- 🖥️ Pantallas grandes (1200px+)
-
-## ⚡ Rendimiento
-
-- Carga rápida con Astro
-- Imágenes optimizadas
-- CSS minificado en producción
-- JavaScript minimal
 
 ## 📞 Contacto
 
